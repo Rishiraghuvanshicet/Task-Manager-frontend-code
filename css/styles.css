@@ -1,0 +1,72 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 5;
+}
+
+.container {
+    margin:auto;
+    padding: 5;
+    background-color: violet;
+    border-radius: " 40% 0 40% 0";
+}
+
+form{
+    display: flex;
+    gap: 5;
+}
+
+input{
+    padding: 5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button{
+    padding: 5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 2;
+    background-color: lightgray;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    background-color: lightgreen;
+    opacity: 0.75;
+}
+
+.task-options{
+    display: flex;
+    gap: 2;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    form {
+        flex-direction: column;
+    }
+    input, button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
