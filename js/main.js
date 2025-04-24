@@ -1,6 +1,6 @@
-import { getTasks, saveTasks } from "./store";
-import { displayTasks } from "./ui";
-import { createTask } from "./task";
+import { getTasks, saveTasks } from "./store.js";
+import { displayTasks } from "./ui.js";
+import { createTask } from "./task.js";
 
 let tasks = getTasks();
 let filter = "all";

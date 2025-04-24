@@ -1,0 +1,101 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  margin: auto;
+  padding: 5px;
+  background-color: orangered;
+  border-radius: 16px;
+  max-width: 600px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid orangered;
+  font-size: 16px;
+}
+
+button {
+  padding: 5px;
+  margin: 2px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(0, 184, 245);
+  color: white;
+  font-weight: "bold";
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.task-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.task-options select,
+.task-options button {
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background-color: lightgray;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:10px;
+  box-shadow: 0 0 5px #333
+}
+
+li.completed {
+  background-color: lightgreen;
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  form {
+    flex-direction: column;
+  }
+  input,
+  button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
