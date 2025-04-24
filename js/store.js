@@ -7,4 +7,4 @@ export function getTasks() {
 
 export function saveTasks(tasks) {
     localStorage.setItem(secretKey, JSON.stringify(tasks));
-}
+} 
